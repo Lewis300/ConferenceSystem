@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteAccountController">
+    <children>
+        <ListView fx:id="userListField" editable="false" layoutX="40.0" layoutY="94.0" prefHeight="182.0" prefWidth="520.0" />
+        <Label layoutX="230.0" layoutY="47.0" text="Delete Account" underline="true">
+            <font>
+                <Font name="Arial" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="41.0" layoutY="339.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="Back" />
+        <Button fx:id="deleteButton" layoutX="508.0" layoutY="339.0" mnemonicParsing="false" onAction="#onDeleteButtonClicked" text="Delete" />
+        <Label fx:id="createMessageLabel" layoutX="184.0" layoutY="331.0" prefHeight="17.0" prefWidth="255.0" />
+    </children>
+</AnchorPane>

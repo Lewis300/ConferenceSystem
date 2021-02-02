@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EventCreationController">
+   <children>
+      <TextArea accessibleRole="LIST_VIEW" editable="false" layoutX="40.0" layoutY="94.0" prefHeight="94.0" prefWidth="520.0" text="There are 6 possible rooms for speeches.The room number is from 0-5. &#10;The event has to be between 9am-5pm.&#10;if there is multiple speakers separate each speaker with ':' for no speaker leave it empty.&#10;Time should be written in this form yyyy-MM-dd HH:mm (Must be in military time)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="eventTitleField" layoutX="106.0" layoutY="196.0" />
+      <Label layoutX="40.0" layoutY="200.0" text="Event Title:" />
+      <Label layoutX="230.0" layoutY="47.0" text="Create Event" underline="true">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="235.0" text="StartTime:" />
+      <TextField fx:id="startTimeField" layoutX="106.0" layoutY="231.0" />
+      <Label layoutX="40.0" layoutY="268.0" text="End Time:" />
+      <TextField fx:id="endTimeField" layoutX="106.0" layoutY="264.0" />
+      <Label layoutX="274.0" layoutY="200.0" text="Speaker Usernames:" />
+      <TextField fx:id="speakerUsernamesField" layoutX="391.0" layoutY="196.0" />
+      <Label layoutX="299.0" layoutY="235.0" text="Room Number:" />
+      <TextField fx:id="roomNumberField" layoutX="391.0" layoutY="231.0" />
+      <Label layoutX="300.0" layoutY="268.0" text="Event Capacity:" />
+      <TextField fx:id="eventCapacityField" layoutX="391.0" layoutY="264.0" />
+      <Button fx:id="backButton" layoutX="41.0" layoutY="339.0" mnemonicParsing="false" onAction="#onBackButtonClicked" text="Back" />
+      <Button fx:id="createButton" layoutX="508.0" layoutY="339.0" mnemonicParsing="false" onAction="#onCreateButtonClicked" text="Create" />
+      <Label fx:id="createMessageLabel" layoutX="125.0" layoutY="331.0" prefHeight="17.0" prefWidth="352.0" />
+      <CheckBox fx:id="vipOnlyCheck" layoutX="255.0" layoutY="309.0" mnemonicParsing="false" onAction="#onVipOnlyCheck" text="VIP Only" />
+   </children>
+</AnchorPane>
